@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefonia Jubileu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "main-container">
+        <h1>Calculadora de ligação</h1>
+
+                <!-- USUÁRIO SELECIONA ORIGEM E DESTINO DA LIGAÇÃO-->
+        <div id="ddds">
+            <label for="origem">Origem:</label>
+            <select name="origem" id="origem-select">
+                <option value="none"></option>
+                <option value="11" id="011">011</option>
+                <option value="16" id="016">016</option>
+                <option value="17" id="017">017</option>
+                <option value="18" id="018">018</option>
+            </select>
+            <label for="destino">Destino:</label>
+            <select name="destino" id="destino-select">
+                <option value="none"></option>
+                <option value="11" id="011">011</option>
+                <option value="16" id="016">016</option>
+                <option value="17" id="017">017</option>
+                <option value="18" id="018">018</option>
+            </select>
+        </div>
+
+                <!--TEMPO LIGAÇÃO-->
+        <div id = "tempo">
+            <label for="tempo">Digite o tempo da chamada:</label>
+            <input type="number" name="tempo" placeholder="Em minutos">
+        </div>
+
+                <!--PLANO DESEJADO-->
+        <div id="plano">
+            <label for="plano">Escolha o plano desejado:</label>
+            <select name="plano" id="plano-select">
+                <option value="none"></option>
+                <option value="FaleMais30" id="mais30">FaleMais30</option>
+                <option value="FaleMais60" id="mais60">FaleMais60</option>
+                <option value="FaleMais120" id="mais120">FaleMais120</option>
+            </select>
+        </div>
+
+
+
+
+
+
+        
+        
+        <button id="calcular" onclick="calcular()">
+            Calcular!
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
